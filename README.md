@@ -9,7 +9,7 @@ A REST api written in Django
     ```
 * Then, Git clone this repo to your PC
     ```sh
-        git clone https://github.com/Ravindra-Kemble/Auth_api.git
+        git clone https://github.com/Ravindra-Kemble/Auth_app.git
     ```
 
 * #### Dependencies
