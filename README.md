@@ -20,6 +20,7 @@ A REST api written in Django
         ```
     3. Install the dependencies needed to run the app:
         ```sh
+             cd Auth_app
              pip install -r requirements.txt
         ```
     4. Make those migrations work
@@ -35,5 +36,22 @@ A REST api written in Django
     ```
     You can now access the file api service on your browser by using
     ```
-        http://localhost:8000/auth/
+        http://localhost:8000/api/
     ```
+    
+    #### API Endpoints
+
+1. **User Registration**:
+   - POST /api/register
+     - Request: { "email": "user@example.com" }
+     - Response: { "message": "Registration successful. Please verify your email." }
+
+2. **Request OTP**:
+   - POST /api/request-otp
+     - Request: { "email": "user@example.com" }
+     - Response: { "message": "OTP sent to your email." }
+
+3. **Verify OTP**:
+   - POST /api/verify-otp
+     - Request: { "email": "user@example.com", "otp": "123456" }
+     - Response: { "message": "Login successful.", "token": "jwt_token" }
