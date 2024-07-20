@@ -16,7 +16,7 @@ A REST api written in Django
     1. Create and fire up your virtual environment:
         ```sh
              virtualenv  venv -p python3
-             source venv/bin/activate
+             venv/bin/activate
         ```
     3. Install the dependencies needed to run the app:
         ```sh
